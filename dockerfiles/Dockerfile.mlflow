@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+RUN pip install --upgrade pip
+
+RUN pip install mlflow==3.1.1
+
+WORKDIR /app/ 
+
+CMD ["mlflow", "server", "--backend-store-uri=$MLFLOW_TRACKING_URI", "--default-artifact-root=$MLFLOW_ARTIFACT_ROOT", "--port=5000"]
+
+RUN sleep 5
+

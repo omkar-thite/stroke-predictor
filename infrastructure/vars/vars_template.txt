@@ -1,0 +1,40 @@
+Create a prod.tfvars file in this directory and add following variables in it.  
+
+gcp_region
+zone
+project_id
+
+impersonate_service_account - google service account to use
+function_service_account_email - Same as impersonate_service_account
+
+artifacts_bucket_name
+artifacts_registry_repo_name
+image_name
+image_tag
+
+state_bucket - Bucket name for terraform, create it prior manually
+
+job_name - Run job name 
+
+vpc_name
+subnet_name
+subnet_cidr = "10.2.0.0/20"
+connector_ip_cidr = "10.8.0.0/28"
+
+db_instance_name
+db_username
+db_password
+db_name
+data_disk_size
+data_disk_type
+db_tier = "db-f1-micro"
+
+docker_yml_path = "../docker-compose.yaml"
+dockerfile_inference_path = "../dockerfiles/Dockerfile.inference"
+dockerfile_train_path = "../dockerfiles/Dockerfile.train"
+train_script_path = "../train.py"
+inference_script_path = "../inference.py"
+inference_input_data_path = "../data/input_data.json"
+train_data_path = "../data/healthcare-dataset-stroke-data.csv"
+
+ 

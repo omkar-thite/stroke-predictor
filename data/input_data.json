@@ -1,0 +1,54 @@
+[
+    {
+        "id": 9046,
+        "gender": "Male",
+        "age": 67,
+        "hypertension": 0,
+        "heart_disease": 1,
+        "ever_married": "Yes",
+        "work_type": "Private",
+        "Residence_type": "Urban",
+        "avg_glucose_level": 228.69,
+        "bmi": 36.6,
+        "smoking_status": "formerly smoked"
+    },
+    {
+        "id": 51676,
+        "gender": "Female",
+        "age": 61,
+        "hypertension": 0,
+        "heart_disease": 0,
+        "ever_married": "Yes",
+        "work_type": "Self-employed",
+        "Residence_type": "Rural",
+        "avg_glucose_level": 202.21,
+        "bmi": "N/A",
+        "smoking_status": "never smoked"
+    },
+    {
+        "id": 31112,
+        "gender": "Male",
+        "age": 80,
+        "hypertension": 0,
+        "heart_disease": 1,
+        "ever_married": "Yes",
+        "work_type": "Private",
+        "Residence_type": "Rural",
+        "avg_glucose_level": 105.92,
+        "bmi": 32.5,
+        "smoking_status": "never smoked"
+    },
+    {
+        "id": 58587,
+        "gender": "Male",
+        "age": 61,
+        "hypertension": 0,
+        "heart_disease": 0,
+        "ever_married": "Yes",
+        "work_type": "Private",
+        "Residence_type": "Urban",
+        "avg_glucose_level": 61.32,
+        "bmi": 23.7,
+        "smoking_status": "smokes"
+    }
+]

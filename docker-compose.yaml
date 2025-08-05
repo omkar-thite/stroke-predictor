@@ -1,0 +1,33 @@
+services:
+  mlflow:
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile.mlflow
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env 
+  
+  train:
+    build: 
+      context: .
+      dockerfile: dockerfiles/Dockerfile.train
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    image: train:latest
+    depends_on:
+      - mlflow
+    
+  inference:
+    build: 
+      context: .
+      dockerfile: dockerfiles/Dockerfile.inference
+    env_file:
+      - .env
+    volumes:
+      - ./input_data.txt:/app/input_data.txt
+    image: inference:latest
+    depends_on:
+      - mlflow

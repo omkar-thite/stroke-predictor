@@ -1,0 +1,9 @@
+*venv
+*db
+*mlruns
+*mlartifacts
+*env
+__pycache__
+*.tfvars*
+*.terraform*
+*env*
