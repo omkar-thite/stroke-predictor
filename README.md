@@ -1,4 +1,5 @@
 # Stroke Predictor - MLOps Project
+**Archived**
 
 A complete MLOps solution for training and deploying a machine learning model that predicts stroke risk based on healthcare data.
 
